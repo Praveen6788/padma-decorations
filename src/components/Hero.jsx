@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import heroMain   from "../assets/hero_main.png"
-import heroStage  from "../assets/hero_slide.png"
-import mandapDecor from '../assets/mandap_decor.png';
+import heroStage  from "../assets/hero2.png"
+import mandapDecor from '../assets/hero3.png';
 
 const slides = [
   {
@@ -56,7 +56,7 @@ export default function Hero() {
           key={i}
           className={`absolute inset-0 bg-cover bg-center transition-opacity duration-700
             ${i === cur ? 'opacity-100' : 'opacity-0'}`}
-          style={{ backgroundImage: `url(${s.image})` }}
+          style={{ backgroundImage: `url(${s.image})`}}
         />
       ))}
 
